@@ -23,3 +23,6 @@ const numbers = [21,18,5,3,2,1,1]
 console.log(numbers)
 numbers[2] = null
 console.log(numbers)
+
+let arr = ["apple", `Howl's moving castle`]
+console.log(arr)
