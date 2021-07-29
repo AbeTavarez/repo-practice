@@ -1,5 +1,3 @@
-
-
 let movies = [
     {name: "Titanic"},
     {name: "Space Jam"},

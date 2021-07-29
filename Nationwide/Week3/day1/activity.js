@@ -2,7 +2,6 @@
 
 
 const movie = { title: "Eraserhead", director: "David Lynch", year: 1978};
-
 // print keys
 for (let key in movie){
     console.log(key)
