@@ -1,0 +1,27 @@
+.headerStyle {
+    background: royalblue;
+    font-size: 18;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.meat {
+    background: crimson;
+    padding: 2px;
+}
+
+.dairy {
+    background: darkblue;
+    padding: 2px;
+}
+
+.vegetable {
+    background: gray;
+    padding: 2px;
+}
+
+.fruit {
+    background: indianred;
+    padding: 2px;
+}

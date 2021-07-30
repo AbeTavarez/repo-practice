@@ -55,7 +55,7 @@ const monster = {
  ////////////////////////////////////* Game simulator 
 
  while(adventurer.hitpoints > 0 || ogre.hitpoints > 0){
-
+    //* creates random number
     let randNUm = Math.floor(Math.random() * 2)
     console.log(randNUm)
 

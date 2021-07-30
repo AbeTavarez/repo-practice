@@ -1,0 +1,25 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    /* width: 50vw;
+    height: 20vh; */
+    border: 1px solid grey;
+    background: azure;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* #box {
+    width: 25vw;
+    height: 25vh;
+    border: 1px red solid;
+} */
+
+.name, .address {
+    border: 1px solid grey;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 5px;
+}
+
