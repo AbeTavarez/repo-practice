@@ -1,1 +1,3 @@
-console.log(`working....`)
+console.log(`stranger things are coming!`)
+
+console.log($)
