@@ -32,8 +32,8 @@ $('form').on('submit', e => {
         btnBorough = 'BRONX';
     };
 
-    //* ==================================== Make API call
-    //* ===== checks if numOfComplaints has a value 
+    //* =============================================================== Make API call
+    //* ======================== checks if numOfComplaints has a value 
     if (numOfComplaints){
         $('#result-h2').show()
         // create ajax call with numOfComplains
@@ -59,11 +59,26 @@ $('form').on('submit', e => {
 
                     let status = $('<div>').html(complaint.status)
                     $('#complaints-container').append(status)
+
+                    let pResponseBtn = $('<button>').html("Police Response")
+                    $('#complaints-container').append(pResponseBtn)
+
+                    // prepare police response
+                    let police_response = $('<div>').html(complaint.resolution_description);
+                    $('#complaints-container').append(police_response)
+                    police_response.hide()
+
+                    
+                    pResponseBtn.on('click', () => {
+                        pResponseBtn.remove();
+                        police_response.show()
+
+                    });
                 })
             },
             error => console.log(error)
         );
-        //* ====== if no number os complaints was enter
+        //* =========================================================== Default API call -if no number os complaints was enter
         } else {
             $('#result-h2').show()
         // make default ajax call with limit 10 from NYPD
@@ -89,6 +104,21 @@ $('form').on('submit', e => {
 
                     let status = $('<div>').html(complaint.status)
                     $('#complaints-container').append(status)
+
+                    let pResponseBtn = $('<button>').html("Police Response")
+                    $('#complaints-container').append(pResponseBtn)
+
+                    // prepare police response
+                    let police_response = $('<div>').html(complaint.resolution_description);
+                    $('#complaints-container').append(police_response)
+                    police_response.hide()
+
+                    
+                    pResponseBtn.on('click', () => {
+                        pResponseBtn.remove();
+                        police_response.show()
+
+                    });
                     
                    
                 
