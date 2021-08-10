@@ -115,8 +115,7 @@ $('form').on('submit', e => {
 
                     
                     pResponseBtn.on('click', () => {
-                        pResponseBtn.remove();
-                        police_response.show()
+                        police_response.show().toggleClass('show')
 
                     });
                     
@@ -130,27 +129,3 @@ $('form').on('submit', e => {
         };
         e.stopPropagation();
 });
-
-// $('#borough').html(data[index].borough)
-// $('#complaint').html(data[index].complaint)
-// $('#description').html(data[index].descriptor)
-// $('#status').html(data[index].status)
-
-
-
-
-// promise.then(
-//     // on success
-//     data => {
-//         $('#title').html(data.Title)
-//         $('#year').html(data.Year)
-//         $('#rating').html(data.Rated)
-//     },
-//     // on error
-//     error => {
-//         console.log(`Bad request`)
-//     }
-// )
-
-
-// })

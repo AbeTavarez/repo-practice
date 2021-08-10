@@ -1,0 +1,23 @@
+body {
+    background-color:burlywood;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+button {
+    height: 25px;
+    border-radius: 5px;
+}
+
+.police {
+    background-color: black;
+    color: cadetblue;
+}
+
+.hidden{
+    display: none;
+}
+
+.show {
+    display: visible;
+}
