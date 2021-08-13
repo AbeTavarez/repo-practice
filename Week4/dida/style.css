@@ -1,0 +1,16 @@
+body {
+    background-color: brown;
+    color: burlywood;
+}
+
+button {
+    background-color: cyan;
+}
+
+.show {
+    display: none;
+}
+
+.hidden {
+    display: visible;
+}
