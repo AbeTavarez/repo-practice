@@ -1,6 +1,7 @@
 console.log(`running script...`)
 $('#result-h2').hide()
 
+
 //* ================== Form data
 //* 1- Attach event listener to the form on the html page
 $('form').on('submit', e => {
@@ -16,22 +17,8 @@ $('form').on('submit', e => {
     // 1. Attach event listener to the button
     const buttonId = e.originalEvent.submitter.id;  
     // 3. check button id and sets btnPressed to that id
-    if (buttonId === 'manhattan'){
-        btnBorough = 'MANHATTAN';
-    } 
-    else if (buttonId === 'brooklyn'){
-        btnBorough = 'BROOKLYN';
-    }
-    else if (buttonId === 'queens'){
-        btnBorough = 'QUEENS';
-    }
-    else if (buttonId === 'staten_island'){
-        btnBorough = 'STATEN ISLAND';
-    }
-    else if (buttonId === 'bronx'){
-        btnBorough = 'BRONX';
-    };
 
+    
     //* =============================================================== Make API call
     //* ======================== checks if numOfComplaints has a value 
     if (numOfComplaints){
@@ -118,9 +105,7 @@ $('form').on('submit', e => {
                         police_response.show().toggleClass('show')
 
                     });
-                    
-                   
-                
+
                 })
             },
             error => console.log(error)

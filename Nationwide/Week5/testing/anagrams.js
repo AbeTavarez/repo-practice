@@ -17,8 +17,16 @@ const anagrams = (strA, strB) => {
     // console.log(strB)
     return  strA === strB
 };
-console.log(anagrams(`Hello World`, `! dlrowllohe`))
+
+
+
+
 console.log(anagrams(`Hello World`, `helloo world`))
+console.log(anagrams(`Hello World`, `! dlrowllohe`))
+
+
+
+
 
 //* Exporting the function will make it available in others files on out project
 module.exports = anagrams;
